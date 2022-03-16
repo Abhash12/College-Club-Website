@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(rgba(8, 30, 4, 0.8), rgba(4, 9,30,0.8)), url(pp.jpg) ;
+    opacity: 97%;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    background-color: #2C2C2C;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .title {
+    font-size: 27px;
+    font-weight: bolder;
+    color: white;
+    /* text-align: center; */
+    position: relative;
+    /* padding-bottom: 35px; */
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    background: whitesmoke;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    justify-content: space-between;
+    margin: 30px 0 15px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 35px;
+    width: calc(100%/2 - 20px);
+    /* margin: 30px 0 15px 0; */
+}
+.user-details .input-box .details {
+    color: white;
+    font-weight: 500px;
+    font-size: 23px;
+    margin-bottom: 5px;
+    display: block;
+}
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    /* border:3px solid orange; */
+    padding-left: 25px;
+    font-size: 18px;
+    border-bottom-width: 4px;
+    transition: all 0.5s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: orange;
+}
+
+form .work .work-title{
+    color: white;
+    font-weight: 500px;
+    font-size: 23px;
+}
+
+form .work .category{
+    width: 80%;
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 14px 0;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    color: white;
+}
+.work .category label{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+.work .category .dot{
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.4s ease;
+}
+#w1:checked ~ .category label .one,
+#w2:checked ~ .category label .two,
+#w3:checked ~ .category label .three,
+#w4:checked ~ .category label .four,
+#w5:checked ~ .category label .five,
+#w6:checked ~ .category label .six,
+#w7:checked ~ .category label .seven,
+#w8:checked ~ .category label .eight,
+#w9:checked ~ .category label .nine{
+    border-color: blue;
+    background: white;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #2C2C2C;
+    background: white;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+
+form .button input:hover{
+    color: black;
+    background: wheat ;
+}
+
+@media (max-width: 2000px)
+{
+    .container{
+        max-width: 100%;
+
+    }
+    form .user-details .input-box {
+        margin-bottom: 35px;
+        width: 100%;
+        /* margin: 30px 0 15px 0; */
+    }
+    form .work .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

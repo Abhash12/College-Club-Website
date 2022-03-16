@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+        min-height: 100vh;
+        width: 100%;
+        background: #2A2A2C;
+        position: relative;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    background: #2A2A2C;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background: #2A2A2C;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+.logo img{
+    transition: 0.8s ease-in-out;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.logo img:hover{
+    transform: scale(1.12) rotate(360deg);
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    border: 1px solid #308D46;
+    padding: 7px 22px;
+    margin: 10px 15px;
+    box-shadow: 4px 4px 5.5px #131417;
+    transition: 0.3s;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #308D46;
+    font-size: 15.5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+nav ul li:hover a{
+    color: #ffffff;
+}
+nav ul li:hover{
+    background: #308D46;
+    border: 1px solid #308D46;
+    transform: translate(-6px,-6px);
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    size: 3.5rem;
+}
+h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 3rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 1.5;
+}
+p{
+    color: #8f8f8f;
+    margin: 10px 0 0 0;
+}
+/*   Headings */
+
+#title{
+    background-color: #0e8818;
+    color: #fff;
+}
+
+
+.container-fluid{
+    padding: 3% 15% 0 15%;
+    height: 65vh;
+}
+
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.big-heading{
+    text-align: center;
+}
+
+
+
+/* Download Buttons */
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+
+/* title image */
+.title-image{
+    width: 60%;
+   position: relative;
+   border-radius: 10%;
+   margin: 0 0 50% 20%;
+   left: 18%;
+}
+
+
+
+
+
+.para{
+    color: #8f8f8f;
+}
+
+/* event section */
+#events{
+    
+    background-color:#064b0b;
+    text-align: center;
+    color: #fff;
+}
+.event-image{
+    
+    /* float: right; */
+    width:100%;
+    margin: 0 50px 0 50px;
+}
+
+.carousel-item{
+    padding: 8% 15%;
+}
+.event-para{
+    font-size: large;
+}
+
+
+
+
+
+/* footer */
+.footer-button{
+    margin: 5% 3% 5% 0;
+}
+
+
+#footer{
+    padding: 2%;
+    text-align: center;
+}
+
+.social-icon{
+    margin: 20px 10px;
+}
+
+
+
+
+@media (max-width:1028px){
+    .title-image{
+        transform: rotate(0);
+        position: static;
+    }
+
+    #title{
+        text-align: center;
+    }
+}

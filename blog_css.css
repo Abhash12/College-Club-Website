@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins',sans-serif;
+    padding: 0px;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: 'Poppins',sans-serif;
+    color: #2a2a2c;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 40px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    background: #2A2C2D;
+  }
+  hr{
+      height: 3px;
+  }
+  .head{
+    padding-top: 20px;
+    font-size: 25px;
+  }
+  .header h3{
+      font-weight: 800;
+      color: #fff;
+      font-size: 30px;
+      padding-bottom: 20px;
+  }
+  .header h1{
+      font-size: 60px;
+  }
+  .grey-bar{
+    height: 3vh;
+    background: #131417;
+}
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {  
+    float: left;
+    width: 75%;
+    font-family: sans-serif;
+  }
+  .row{
+      background-color: #2A2A2C;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  .rightcolumn p{
+      text-align: justify;
+      font-size: 17px;
+      padding-top: 20px;
+      font-weight: 500;
+  }
+  .rightcolumn h2{
+      font-size: 40px;
+  }
+  .p_post {
+    
+    align-items: center;
+  }
+  .pimg:hover {
+     opacity: 0.8;
+     cursor: pointer;
+  }
+  h2 {
+    color: green;
+  }
+  h5 {
+    color: black;
+    font-family:sans-serif;
+  }
+  
+  
+  /* Style all font awesome icons */
+  .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration:none;
+  }
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* linkedin */
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
+  /* instagram */
+  .fa-instagram {
+    background:  #e42293;
+    color: white;
+  }
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 60%;
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .header{
+    min-height: 20vh;
+    width: 100%;
+    background: #131417;
+    position: relative;
+}
+.footer1 {
+    background-color: #308d46;
+    color: white;
+    height: 10vh;
+    margin: 0px;
+    line-height: 5vh;
+    text-align: center;
+}
+.footer1 p{
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    display: flex;
+    padding: 20px 50px;
+    align-items: center;
+    background: #2A2A2C;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+.logo img{
+    transition: 0.8s ease-in-out;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.logo img:hover{
+    transform: scale(1.12) rotate(360deg);
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    border: 1px solid #308D46;
+    padding: 7px 22px;
+    margin: 10px 15px;
+    box-shadow: 4px 4px 5.5px #131417;
+    transition: 0.3s;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #308D46;
+    font-size: 15.5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+nav ul li:hover a{
+    color: #ffffff;
+}
+nav ul li:hover{
+    background: #308D46;
+    border: 1px solid #308D46;
+    transform: translate(-6px,-6px);
+}
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
